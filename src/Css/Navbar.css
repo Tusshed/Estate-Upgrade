@@ -1,0 +1,123 @@
+nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5rem 18px 5rem;
+    background-color: rgb(55, 175, 55);
+}
+
+nav h1 {
+    color: green;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.5px;
+}
+
+nav h1 span {
+    color: limegreen;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    padding: 10px 25px;
+}
+
+.menu ul li a {
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.btn {
+    background: #5b7d05;
+    padding: 8px 20px;
+    border: 2px solid black;
+    margin-left: 2rem;
+    border-radius: 30px;
+}
+
+.btn a {
+    color: #fff;
+    font-style: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.fa.bars {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #5b7d05;
+}
+
+
+/* Media Query For Navbar*/
+
+@media screen and (max-width:985px) {
+    nav {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    nav h1 {
+        font-size: 1.6rem;
+    }
+    .btn {
+        margin: 0;
+    }
+    .fa.bars {
+        display: flex;
+    }
+    .menu {
+        display: block;
+        z-index: 9999!important;
+        position: absolute;
+        left: 3%;
+        top: 68px;
+        width: 93%;
+        background-color: #5b7d05;
+        transform: translateY(-300px);
+        transition: transform 1s ease-in-out visibility 1s;
+        padding-bottom: 1rem;
+        border-radius: 1rem;
+        visibility: hidden;
+    }
+    .mobile-menu {
+        visibility: visible;
+        transform: translate(0px);
+        transition: transform 1s ease-in-out, visibility 1s;
+    }
+    .menu ul {
+        display: block;
+    }
+    .menu ul li {
+        padding: 17px 3rem;
+    }
+    .btn {
+        padding-left: 3rem;
+        border: none;
+        background: transparent;
+    }
+    @media screen and(max-width:550px) {
+        nav {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .fa.bars {
+            font-size: 1.7rem;
+        }
+    }
+}
