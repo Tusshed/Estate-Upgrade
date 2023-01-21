@@ -5,11 +5,13 @@ export const Home = () => {
     <Fragment>
       <section className="home">
         <div className="container">
-          <h1>Begin your journey to becoming a property owner today </h1>
+          <h1>
+            Become a property <br />
+            owner today{" "}
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            enim cupiditate aspernatur obcaecati, delectus harum in iusto
-            maxime, excepturi quia tenetur explicabo recusandae!
+            Explore our estates nationwide, whether you’re looking to build, buy
+            or invest, we will kick you off to a great and lasting experience.
           </p>
           <div className="link">
             <a href="#" className="explore">
