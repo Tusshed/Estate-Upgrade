@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import PropertyDetail from "../Detail/PropertyDetail";
+import "../Css/Property.css";
 
 const Property = () => {
   const [detail, setDetail] = useState(PropertyDetail);
