@@ -49,6 +49,16 @@ const PropertyDetail = [
     type: "Land",
     currency: "₦",
   },
+  {
+    id: "6",
+    Image: "PropertyImages/town park and Gardens imota ogun.jpeg",
+    heading: "Town Park & Gardens",
+    span: "Imota,Ogun State",
+    amount: "4,000,000",
+    size: "600 Sqm",
+    type: "Land",
+    currency: "₦",
+  },
 ];
 
 export default PropertyDetail;

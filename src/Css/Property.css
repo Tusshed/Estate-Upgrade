@@ -135,3 +135,129 @@
     box-shadow: 0 0 40px 40px #5b7d05 inset;
     color: white;
 }
+
+
+/*Media screens*/
+
+@media screen and (max-width:1156px) {
+    .row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .property {
+        padding-bottom: 2rem;
+    }
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .single-property {
+        width: 500px;
+    }
+    .column {
+        padding-bottom: 2rem;
+    }
+    .property-thumb img {
+        width: 500px;
+    }
+    .property-content {
+        padding: 15px;
+    }
+    .more-property {
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .single-property {
+        width: 450px;
+    }
+    .column {
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and(max-width:483px) {
+    .center h3 {
+        font-style: 35px;
+    }
+    .single-property {
+        width: 400px;
+    }
+    .property-thumb img {
+        width: 400px;
+    }
+    .more-property .property-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .single-property {
+        width: 350px;
+    }
+    .property-thumb img {
+        width: 350px;
+    }
+    .column {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:383px) {
+    .property h3 {
+        font-style: 28px;
+    }
+    .property-content h3 {
+        font-size: 14px;
+    }
+    .single-property {
+        width: 300px;
+    }
+    .property-thumb img {
+        width: 300px;
+    }
+    .column {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .property-footer ul li span {
+        font-size: 10px;
+        font-weight: 400;
+        margin-left: 3px;
+    }
+    .property-footer ul li img {
+        width: 14px;
+    }
+}
+
+@media screen and(max-width:321px) {
+    .single-property {
+        width: 270px;
+    }
+    .property-thumb img {
+        width: 270px;
+    }
+    .column {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .property-footer {
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width:291px) {
+    .single-property {
+        width: 230px;
+    }
+    .property-thumb img {
+        width: 230px;
+    }
+    .property-content {
+        padding: 10px;
+    }
+}
