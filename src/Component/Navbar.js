@@ -7,7 +7,7 @@ const Navbar = () => {
     <Fragment>
       <nav>
         <h1>
-          AdronHomes<span>.</span>
+          AdronHomes <span>.</span>
         </h1>
         <div className={showMenu ? "menu mobile-menu" : "menu"}>
           <ul>
