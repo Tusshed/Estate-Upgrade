@@ -5,6 +5,7 @@ import Home from "./Component/Home";
 import Property from "./Component/Property";
 import Services from "./Component/Services";
 import Accordion from "./Component/Accordion";
+import Counter from "./Component/Counter";
 const App = () => {
   return (
     <Fragment>
@@ -13,6 +14,7 @@ const App = () => {
       <Property />
       <Services />
       <Accordion />
+      <Counter />
     </Fragment>
   );
 };

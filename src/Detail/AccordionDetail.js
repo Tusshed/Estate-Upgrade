@@ -1,21 +1,21 @@
 const questions = [
   {
     id: "1",
-    question: "How much do i need for a downpayment?",
+    question: "How Much Do I Need For A Downpayment?",
     answer:
-      "We love arranging mortgages for First Time Buyers and take pride in making sure we make your move as stress free as possible.Our consultants will discuss all aspects involved and will use our knowledge and expertise regarding lenders criteria to determine if they are a suitable option. We will explain the types of products available and the effect on the repayments depending on the term.",
+      "We take pride in  making sure our first Time Buyers experience is as stress free as possible,customers are allowed to key in with initial deposits as low as ₦25,000",
   },
   {
     id: "2",
-    question: "What is the first step of buying a property?",
+    question: "Why Adron Homes?",
     answer:
-      "We love arranging mortgages for First Time Buyers and take pride in making sure we make your move as stress free as possible.Our consultants will discuss all aspects involved and will use our knowledge and expertise regarding lenders criteria to determine if they are a suitable option. We will explain the types of products available and the effect on the repayments depending on the term.",
+      "We are daily driven to increase our land bank,expand our client base,offer excellent services and affordable housing products with a singular mission to exceed expectations.",
   },
   {
     id: "3",
-    question: "How much do i need for a downpayment?",
+    question: "How Does Spread And Installments Payments Work?",
     answer:
-      "We love arranging mortgages for First Time Buyers and take pride in making sure we make your move as stress free as possible.Our consultants will discuss all aspects involved and will use our knowledge and expertise regarding lenders criteria to determine if they are a suitable option. We will explain the types of products available and the effect on the repayments depending on the term.",
+      "Customers are allowed to use the spread payment method, clients who cannot afford to pay outright for properties they are interested in are allowed to pay installmentaly  within 36 months",
   },
 ];
 export default questions;
