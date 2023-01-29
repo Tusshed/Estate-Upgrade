@@ -4,6 +4,7 @@ import Navbar from "./Component/Navbar";
 import Home from "./Component/Home";
 import Property from "./Component/Property";
 import Services from "./Component/Services";
+import Accordion from "./Component/Accordion";
 const App = () => {
   return (
     <Fragment>
@@ -11,6 +12,7 @@ const App = () => {
       <Home />
       <Property />
       <Services />
+      <Accordion />
     </Fragment>
   );
 };
