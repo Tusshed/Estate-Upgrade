@@ -1,6 +1,8 @@
 import React, { Fragment, useState } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import "../Css/Counter.css";
+
 const Counter = ({ className, ...rest }) => {
   const [viewPortEntered, setViewPortEntered] = useState(false);
   return (
