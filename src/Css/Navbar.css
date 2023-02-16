@@ -9,11 +9,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 18px 5rem 18px 5rem;
-    background-color: rgb(55, 175, 55);
+    background-color: #5b7d05;
 }
 
 nav h1 {
-    color: green;
+    color: yellow;
     font-size: 2rem;
     font-family: 'Merriweather', serif;
     letter-spacing: 0.5px;
@@ -66,9 +66,28 @@ nav h1 span {
 }
 
 
+/* for transition when scroll */
+
+.navbar.active {
+    position: fixed;
+    width: 100%;
+    top: -70px;
+    left: 0;
+    right: 0;
+    z-index: 990;
+    box-shadow: 0 3px 16px rgb(0 0 0 /10%);
+    border-color: #2c2a2f;
+    transform: translateY(70px);
+    transition: transform 1s ease;
+}
+
+
 /* Media Query For Navbar*/
 
 @media screen and (max-width:985px) {
+    .navbar.active {
+        display: none;
+    }
     nav {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -98,7 +117,7 @@ nav h1 span {
     }
     .mobile-menu {
         visibility: visible;
-        transform: translate(0px);
+        transform: translateY(0px);
         transition: transform 1s ease-in-out, visibility 1s;
     }
     .menu ul {

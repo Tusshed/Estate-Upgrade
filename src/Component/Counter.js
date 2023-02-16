@@ -75,7 +75,7 @@ const Counter = ({ className, ...rest }) => {
             {/*col 3*/}
             <div className="counter-column">
               <strong>
-                <CountUp {...rest} start={viewPortEntered ? null : 0} end={206}>
+                <CountUp {...rest} start={viewPortEntered ? null : 0} end={38}>
                   {({ countUpRef }) => {
                     return (
                       <VisibilitySensor
@@ -97,14 +97,14 @@ const Counter = ({ className, ...rest }) => {
                 </CountUp>
               </strong>
               <span>
-                Average
-                <br /> Land
+                Land
+                <br /> Locations
               </span>
             </div>
             {/*col 4*/}
             <div className="counter-column">
               <strong>
-                <CountUp {...rest} start={viewPortEntered ? null : 0} end={27}>
+                <CountUp {...rest} start={viewPortEntered ? null : 0} end={86}>
                   {({ countUpRef }) => {
                     return (
                       <VisibilitySensor

@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import Collapsible from "react-collapsible";
 import pic from "../Images/suitboy.jpg";
+import logo from "../Images/AdronHomes.jpg";
 import Question from "../Detail/AccordionDetail";
 import "../Css/Accordion.css";
 
@@ -34,7 +35,7 @@ const Accordion = () => {
             })}
           </div>
           <div className="right">
-            <img src={pic} alt="agent-pic" />
+            <img src={logo} alt="agent-pic" />
           </div>
         </div>
       </section>
