@@ -7,6 +7,7 @@ import Services from "./Component/Services";
 import Accordion from "./Component/Accordion";
 import Counter from "./Component/Counter";
 import Agent from "./Component/Agent";
+import Footer from "./Component/Footer";
 const App = () => {
   return (
     <Fragment>
@@ -17,8 +18,10 @@ const App = () => {
       <Accordion />
       <Counter />
       <Agent />
+
+      <Footer />
     </Fragment>
   );
 };
-
+/*api key for chatGpt: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 */
 export default App;

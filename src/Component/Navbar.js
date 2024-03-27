@@ -16,7 +16,7 @@ const Navbar = () => {
     <Fragment>
       <nav className={transitionNavbar ? "navbar active" : "navbar"}>
         <h1>
-          Adron Ring-Road Office <span>.</span>
+          Ringroad Territory <span>.</span>
         </h1>
         <div className={showMenu ? "menu mobile-menu" : "menu"}>
           <ul>

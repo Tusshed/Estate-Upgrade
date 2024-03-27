@@ -12,6 +12,10 @@ nav {
     background-color: #5b7d05;
 }
 
+nav.active {
+    background-color: transparent;
+}
+
 nav h1 {
     color: yellow;
     font-size: 2rem;

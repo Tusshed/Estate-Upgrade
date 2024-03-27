@@ -10,7 +10,7 @@ const Counter = ({ className, ...rest }) => {
       <section className="counter">
         <div className="counter-container">
           <div className="counter-row">
-            {/* Column 1 */}
+            {/* Column 1 
             <div className="counter-column">
               <strong>
                 <CountUp {...rest} start={viewPortEntered ? null : 0} end={305}>
@@ -39,13 +39,14 @@ const Counter = ({ className, ...rest }) => {
                 <br /> population
               </span>
             </div>
+            */}
             {/*Col 2 */}
             <div className="counter-column">
               <strong>
                 <CountUp
                   {...rest}
                   start={viewPortEntered ? null : 0}
-                  end={1024}
+                  end={12024}
                 >
                   {({ countUpRef }) => {
                     return (
@@ -75,7 +76,7 @@ const Counter = ({ className, ...rest }) => {
             {/*col 3*/}
             <div className="counter-column">
               <strong>
-                <CountUp {...rest} start={viewPortEntered ? null : 0} end={38}>
+                <CountUp {...rest} start={viewPortEntered ? null : 0} end={42}>
                   {({ countUpRef }) => {
                     return (
                       <VisibilitySensor
