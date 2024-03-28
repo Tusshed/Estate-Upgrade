@@ -102,3 +102,19 @@
     margin-top: 6px;
     margin-bottom: 8px;
 }
+
+
+/*mobile view test */
+
+@media screen and (max-width: 768px) {
+    .agents-row {
+        grid-template-columns: 300px 300px;
+        background-color: whitesmoke;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .agents-row {
+        grid-template-columns: none;
+    }
+}
