@@ -16,7 +16,7 @@
 }
 
 .counter-column .counter-number {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 50px;
     font-family: "Poppins", sans-serif;
     color: #fdae5c;
@@ -31,20 +31,15 @@
     font-family: "Poppins", sans-serif;
 }
 
-@media screen and(max-width:1024px) {
+@media screen and (max-width:768px) {
     .counter-row {
         grid-template-columns: 1fr 1fr;
     }
-    .counter-column {
-        padding: 2rem 0 2rem 0;
-    }
 }
 
-@media screen and(max-width:560px) {
-    .counter {
-        padding: 1rem 1rem 2rem 1rem;
-    }
+@media screen and (max-width:480px) {
     .counter-row {
+        background-color: whitesmoke;
         grid-template-columns: 1fr;
     }
 }
