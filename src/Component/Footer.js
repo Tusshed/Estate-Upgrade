@@ -1,44 +1,9 @@
 import React, { Fragment } from "react";
 import "../Css/Footer.css";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Fragment>
-      {/*
-    <section className="footer">
-        <div className="footer-container">
-          <div className="footer-row">
-            <ul>
-              <li>
-                {" "}
-                <a href="#">Contact Me</a>{" "}
-              </li>
-              <li>
-                <a href="#">
-                  Facebook
-                  <i className="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Twitter
-                  <i className="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Instagram
-                  <i className="fa fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <div className="footer-column">
-              <div className="column-content"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-  */}
       <footer class="footer-section">
         <div class="container">
           <div class="footer-cta pt-5 pb-5">
@@ -104,7 +69,7 @@ const Footer = () => {
                   </div>
                   <ul>
                     <li>
-                      <a href="#">Home</a>
+                      <a href="/">Home</a>
                     </li>
 
                     <li>
@@ -117,7 +82,7 @@ const Footer = () => {
                       <a href="#">Expert Team</a>
                     </li>
                     <li>
-                      <a href="#">Contact us</a>
+                      <a href="email.html">Contact us</a>
                     </li>
                     <li>
                       <a href="https://adronhomesproperties.com/blog/">

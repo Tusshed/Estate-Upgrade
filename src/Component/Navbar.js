@@ -1,5 +1,12 @@
 import React, { Fragment, useState } from "react";
 import "../Css/Navbar.css";
+import {
+  Link,
+  BrowserRouter as Router,
+  Route,
+  Navigate,
+  Routes,
+} from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,16 +28,16 @@ const Navbar = () => {
         <div className={showMenu ? "menu mobile-menu" : "menu"}>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">Estates</a>
+              <a href="#property">Estates</a>
             </li>
             <li>
               <a href="#">Blog</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#form">About Us</a>
             </li>
           </ul>
           <div className="btn">

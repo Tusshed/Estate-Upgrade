@@ -1,15 +1,14 @@
 import React, { Fragment, useState } from "react";
 import AgentDetail from "../Detail/AgentDetail";
 import "../Css/Agent.css";
-
 const Agent = () => {
   const [detail, setDetail] = useState(AgentDetail);
   return (
     <Fragment>
       <section className="agents">
         <div className="agents-heading">
-          <span>Agents</span>
-          <h2>Our Agents</h2>
+          <span>Managers</span>
+          <h2>Our Top Managers</h2>
         </div>
         <div className="agents-row">
           {detail.map((detail) => {

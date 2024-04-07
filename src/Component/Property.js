@@ -6,7 +6,7 @@ const Property = () => {
   const [detail, setDetail] = useState(PropertyDetail);
   return (
     <Fragment>
-      <section className="property">
+      <section className="property" id="property">
         <div className="center">
           <h3>Popular Properties</h3>
         </div>

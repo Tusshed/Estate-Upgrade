@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import "../Css/Home.css";
+
 export const Home = () => {
   return (
     <Fragment>
@@ -15,7 +16,6 @@ export const Home = () => {
           </p>
           <div className="link">
             <a href="#" className="explore">
-              {" "}
               Explore
             </a>
             <a href="#" className="contact">

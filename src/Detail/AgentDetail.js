@@ -1,27 +1,27 @@
 const AgentDetail = [
   {
     id: "1",
-    Image: "AgentImages/pexels-kindel-media-7578976.jpg",
-    name: "Mr A",
-    position: "Business Excecutive",
+    Image: "AgentImages/Ceo.jpeg",
+    name: "Mr Aare Adetola Emmanuel King",
+    position: "Chairman/CEO",
   },
   {
     id: "2",
-    Image: "AgentImages/pexels-photo-7642005.jpeg",
-    name: "Miss B",
-    position: "Business Excecutive",
+    Image: "AgentImages/Azuru.jpeg",
+    name: "Mrs Azuru Ihuoma",
+    position: "Director of sales and marketing (Southern World)",
   },
   {
     id: "3",
-    Image: "AgentImages/pexels-rodnae-productions-7821736.jpg",
-    name: "Mr C",
-    position: "Region Officer",
+    Image: "AgentImages/Olubisi.jpeg",
+    name: "Mrs Olubisi Oriola",
+    position: "Director of sales and marketing (Western world)",
   },
   {
     id: "4",
-    Image: "AgentImages/pexels-rodnae-productions-8293743.jpg",
-    name: "Mr D",
-    position: "Buisness Excecutive",
+    Image: "AgentImages/TcroFola.jpeg",
+    name: "Mrs Folasade Adeleye",
+    position: "Territorial Chief Responsibility officer",
   },
 ];
 export default AgentDetail;
