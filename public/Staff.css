@@ -1,0 +1,55 @@
+.title {
+    width: 50%;
+    margin: auto;
+}
+
+.team-section {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 0 20px 40px;
+}
+
+.team-member img {
+    width: 180px;
+    height: 220px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    /* Optional: Add a border around the image */
+}
+
+.team-member h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.team-member p {
+    margin: 0;
+    font-size: 16px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .team-section {
+        background-image: url('mobile-background.jpg');
+        /* Nice background image */
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        /* Adjust padding as needed */
+    }
+    .team-member {
+        flex: 0 1 calc(50% - 20px);
+        /* Adjust as needed */
+        max-width: calc(50% - 20px);
+        /* Adjust as needed */
+    }
+}

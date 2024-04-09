@@ -2,7 +2,7 @@ const AgentDetail = [
   {
     id: "1",
     Image: "AgentImages/Ceo.jpeg",
-    name: "Mr Aare Adetola Emmanuel King",
+    name: "Mr Adetola Emmanuel King",
     position: "Chairman/CEO",
   },
   {

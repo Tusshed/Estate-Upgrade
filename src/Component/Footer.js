@@ -73,13 +73,15 @@ const Footer = () => {
                     </li>
 
                     <li>
-                      <a href="#">About us</a>
+                      <a href="https://adronhomesproperties.com/about-us/">
+                        About us
+                      </a>
                     </li>
                     <li>
-                      <a href="#">Our Services</a>
+                      <a href="#services">Our Services</a>
                     </li>
                     <li>
-                      <a href="#">Expert Team</a>
+                      <a href="team.html">Expert Team</a>
                     </li>
                     <li>
                       <a href="email.html">Contact us</a>
@@ -90,29 +92,6 @@ const Footer = () => {
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
-                    <h3>Subscribe</h3>
-                  </div>
-                  <div class="footer-text mb-25">
-                    <p>
-                      To subscribe to our news feeds, kindly fill with your
-                      email.
-                    </p>
-                  </div>
-                  <div class="subscribe-form">
-                    <form action="#">
-                      <input type="email" placeholder="Email Address" />
-                      <a href="mailto:ringroad@adronhomesproperties.com">
-                        <button>
-                          <i class="fab fa-telegram-plane"></i>
-                        </button>
-                      </a>
-                    </form>
-                  </div>
                 </div>
               </div>
             </div>

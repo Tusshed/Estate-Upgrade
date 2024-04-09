@@ -109,7 +109,6 @@
 @media screen and (max-width: 768px) {
     .agents-row {
         grid-template-columns: 300px 300px;
-        background-color: whitesmoke;
     }
 }
 

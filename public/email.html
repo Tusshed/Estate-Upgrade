@@ -8,39 +8,50 @@
   </head>
 
   <body>
-    <div class="wrap">
-      <small>Enter message (optional) and click button "Send"</small>
-      <div class="wrapper centered">
-        <article class="letter">
-          <div class="side">
-            <h1>Contact us</h1>
-            <p>
-              <textarea placeholder="Your message"></textarea>
-            </p>
-          </div>
-          <div class="side">
-            <p>
-              <input type="text" placeholder="Your name" />
-            </p>
-            <p>
-              <input type="email" placeholder="Your email" />
-            </p>
-            <p>
-              <button id="sendLetter">Send</button>
-            </p>
-          </div>
-        </article>
-        <div class="envelope front"></div>
-        <div class="envelope back"></div>
+    <form
+      method="POST"
+      action="https://formsubmit.co/icloud4israel@gmail.com"
+      class="form"
+    >
+      <div class="title">Welcome</div>
+      <div class="subtitle">Subscribe to our Newsletter</div>
+      <div class="input-container ic1">
+        <input
+          id="firstname"
+          class="input"
+          type="text"
+          placeholder=" "
+          name="name"
+          required
+        />
+        <div class="cut"></div>
+        <label for="firstname" class="placeholder">Name</label>
       </div>
-      <p class="result-message centered">Thank you for your message</p>
-    </div>
-  </body>
-  <script>
-    function addClass() {
-      document.body.classList.add("sent");
-    }
 
-    sendLetter.addEventListener("click", addClass);
-  </script>
+      <div class="input-container ic2">
+        <input
+          id="lastname"
+          class="input"
+          type="tel"
+          placeholder=""
+          name="tel"
+          required
+        />
+        <div class="cut"></div>
+        <label for="lastname" class="placeholder">Phone Number</label>
+      </div>
+      <div class="input-container ic2">
+        <textarea
+          id="email"
+          class="input"
+          type="text"
+          name="message"
+          placeholder=" "
+        ></textarea>
+        <div class="cut cut-short"></div>
+        <label for="email" class="placeholder">Text</label>
+      </div>
+      <button type="submit" class="submit">submit</button>
+    </form>
+  </body>
 </html>

@@ -13,11 +13,11 @@ const Services = () => {
     <Fragment>
       <section data-aos="fade-up" className="services">
         <div className="heading">
-          <span>My Services</span>
+          <span>Our Services</span>
           <h2> Begin Your Journey To Becoming A Property Owner Today</h2>
         </div>
 
-        <div className="services-row">
+        <div className="services-row" id="services">
           {detail.map((detail) => {
             return (
               <div className="services-card">

@@ -1,136 +1,169 @@
+/* Global Styles */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Open Sans", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+    --main-color: #000000;
+    --secondary-color: #ffffff;
+    --tertiary-color: #222222;
+}
+
+html {
+    font-family: var(--body-font);
+    font-size: 10px;
+    color: var(--main-color);
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #d1f3e7;
+    background-color: #fafafa;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#title-Tag-Line {
-    font-size: 20px;
+
+/* ############################################################ */
+
+
+/* Everything above this line is just standard CSS boilerplate */
+
+
+/* ############ Everything below is the GOOD STUFF ############ */
+
+
+/* ############################################################ */
+
+form {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-input {
+    width: clamp(100px, 50vw, 420px);
+    height: 40px;
+    padding: 0 20px;
+    color: var(--main-color);
+    font-family: var(--body-font);
+    border: 1px solid var(--tertiary-color);
+    /* Basic border styling */
+    border-radius: 1px 1px 2px 2px;
+    margin: 0 auto 10px auto;
+    transition: all 500ms;
+    /* This is used to animate the border later */
 }
 
 
-/* .card-item__bg{
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  display: block;
-  position: relative;
-  margin: 30px auto;
-  transform: translate(0px, 50px);
-  z-index: 5;
-} */
+/* By default, an outline appears around form fields when they're in focus.
+This disables outlines when form fields are in focus. */
 
 
-/* form animation starts */
+/* Also, it makes the top border disappear when the field in focus. */
 
-.form {
-    background: #fff;
-    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
-    border-radius: 5px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    border-top: 5px solid #0e3721;
-    /*   z-index: 1; */
-    animation: bounce 1.5s infinite;
+.form-input:focus {
+    outline: none;
+    border-top-color: rgba(0, 0, 0, 0.1);
 }
 
-::-webkit-input-placeholder {
-    font-size: 1.3em;
-}
 
-.title {
+/* Note: I'm using rems here with a base of 10px. 
+So this means 1.4rem is 14px. */
+
+.form-label {
+    font-size: 1.4rem;
+    color: rgb(117, 117, 117);
     display: block;
-    font-family: sans-serif;
-    margin: 10px auto 5px;
-    width: 300px;
+    /* Moves the label on TOP of the placeholder */
+    /* You'll need to change this as needed */
+    transform: translate(2rem, -4rem);
+    transform-origin: 0 0;
+    /* Used later for transitions */
+    transition: all 500ms;
+    /* Prevents users from highlighting the label. */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    /* THIS PART IS IMPORTANT! */
+    /* This line prevents the label from being selected.*/
+    /* This is crucial because if we want to select the form field,
+     we want to click THROUGH the label. */
+    pointer-events: none;
 }
 
-.termsConditions {
-    margin: 0 auto 5px 80px;
+
+/* THIS PART IS ALSO IMPORTANT!! */
+
+
+/* The block below hides the placeholder entirely. */
+
+
+/* For all intents and purposes, the placeholder no longer exists. */
+
+
+/* What shows on the input field is only the label*. */
+
+
+/* HOWEVER, the input fields still recognizes that the placeholder exists!*/
+
+
+/* The placeholder is just invisible. We need the placeholder to exist for some weird CSS stuff. If we skip this step, we can't make this CSS-only. */
+
+.form-input::placeholder {
+    display: none;
+    color: transparent;
+    /* Prevents users from highlighting the placeholder. */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
 }
 
-.pageTitle {
-    font-size: 2em;
-    font-weight: bold;
+
+/* How to read this: */
+
+
+/* When the input field (.form-input) is in focus, 
+   STYLE the .form-label accordingly */
+
+
+/* ALSO, if the placeholder is NOT shown,
+   STYLE the .form-label accordingly */
+
+
+/* Basically, if there's text inside the input field,
+   by default, the placeholder should disappear.
+   When this happens, the label translates ABOVE the input field and scales down. */
+
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-6.75rem) scale(0.8);
 }
 
-.secondaryTitle {
-    color: grey;
-}
 
-.name {
-    background-color: #ebebeb;
-    color: white;
-}
+/* When the placeholder is NOT shown,
+   STYLE the top border accordingly. */
 
-.name:hover {
-    border-bottom: 5px solid #0e3721;
-    height: 30px;
-    width: 380px;
-    transition: ease 0.5s;
-}
 
-.email {
-    background-color: #ebebeb;
-    height: 2em;
-}
+/* This makes the top border fade-out to grey when the placeholder disappears. */
 
-.email:hover {
-    border-bottom: 5px solid #0e3721;
-    height: 30px;
-    width: 380px;
-    transition: ease 0.5s;
-}
-
-.message {
-    background-color: #ebebeb;
-    overflow: hidden;
-    height: 10rem;
-}
-
-.message:hover {
-    border-bottom: 5px solid #0e3721;
-    height: 12em;
-    width: 380px;
-    transition: ease 0.5s;
-}
-
-.formEntry {
-    display: block;
-    margin: 30px auto;
-    min-width: 300px;
-    padding: 10px;
-    border-radius: 2px;
-    border: none;
-    transition: all 0.5s ease 0s;
-}
-
-.submit {
-    width: 200px;
-    color: white;
-    background-color: #0e3721;
-    font-size: 20px;
-}
-
-.submit:hover {
-    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-    transform: translateY(-3px);
-    width: 300px;
-    border-top: 5px solid #0e3750;
-    border-radius: 0%;
-}
-
-@keyframes bounce {
-    0% {
-        tranform: translate(0, 4px);
-    }
-    50% {
-        transform: translate(0, 8px);
-    }
+.form-input:not(:placeholder-shown) {
+    border-top-color: rgba(0, 0, 0, 0.5);
 }
