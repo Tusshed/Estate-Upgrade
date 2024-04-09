@@ -1,14 +1,10 @@
-.title {
-    width: 50%;
-    margin: auto;
-}
-
 .team-section {
     text-align: center;
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: lightcyan;
 }
 
 .team-member {
@@ -18,38 +14,187 @@
 }
 
 .team-member img {
-    width: 180px;
-    height: 220px;
+    width: 150px;
+    height: 200px;
     border-radius: 20%;
     object-fit: cover;
-    border: 2px solid #fff;
+    border: 2px solid lightgreen;
+    transition: transform 0.3s ease;
     /* Optional: Add a border around the image */
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+    /* Scale the image on hover */
 }
 
 .team-member h3 {
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 18px;
+    color: olivedrab;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    font-family: "Poppins", sans-serif;
 }
 
 .team-member p {
     margin: 0;
-    font-size: 16px;
+    font-size: 13px;
     color: #777;
 }
 
 @media (max-width: 768px) {
-    .team-section {
-        background-image: url('mobile-background.jpg');
-        /* Nice background image */
-        background-size: cover;
-        background-position: center;
-        padding: 50px 20px;
-        /* Adjust padding as needed */
-    }
     .team-member {
         flex: 0 1 calc(50% - 20px);
         /* Adjust as needed */
-        max-width: calc(50% - 20px);
+        max-width: 0 1 calc(50% - 20px);
         /* Adjust as needed */
+        margin: 0 10px 30px;
     }
+}
+
+
+/*footer Css*/
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-section {
+    background: #151414;
+    position: relative;
+}
+
+.cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.cta-text span {
+    color: #757575;
+    font-size: 15px;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 20px;
+}
+
+.footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: lawngreen;
+}
+
+.footer-widget ul li {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+    color: lawngreen;
+}
+
+.footer-widget ul li a {
+    color: #878787;
+    text-transform: capitalize;
+}
+
+.subscribe-form {
+    position: relative;
+    overflow: hidden;
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+}
+
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: limegreen;
+    padding: 13px 20px;
+    border: 1px solid whitesmoke;
+    top: 0;
+}
+
+.subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+}
+
+.copyright-area {
+    background: #2E2E2E;
+    padding: 25px 0;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+    color: lawngreen;
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    color: #878787;
 }

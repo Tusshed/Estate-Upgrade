@@ -41,7 +41,9 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="btn">
-            <a href="#Get Property">Get Property</a>
+            <a href="https://adronhomesproperties.com/property/">
+              Get Property
+            </a>
           </div>
         </div>
         <i class="fa-solid fa-bars" onClick={() => setShowMenu(!showMenu)}></i>

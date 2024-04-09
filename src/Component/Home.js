@@ -18,7 +18,7 @@ export const Home = () => {
             <a href="#" className="explore">
               Explore
             </a>
-            <a href="#" className="contact">
+            <a href="team.html" className="contact">
               Contact Agent
             </a>
           </div>
