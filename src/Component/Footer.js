@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "../Css/Footer.css";
-import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Fragment>

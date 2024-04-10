@@ -1,12 +1,5 @@
 import React, { Fragment, useState } from "react";
 import "../Css/Navbar.css";
-import {
-  Link,
-  BrowserRouter as Router,
-  Route,
-  Navigate,
-  Routes,
-} from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
