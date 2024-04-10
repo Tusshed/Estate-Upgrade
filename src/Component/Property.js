@@ -53,7 +53,10 @@ const Property = () => {
           })}
         </div>
         <div className="more-property">
-          <a className="property-btn" href="#">
+          <a
+            className="property-btn"
+            href="https://adronhomesproperties.com/property/"
+          >
             More Properties
           </a>
         </div>
