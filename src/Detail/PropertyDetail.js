@@ -45,7 +45,7 @@ const PropertyDetail = [
     heading: "Winter park and gardens",
     span: "Sagamu,Ogun State",
     amount: "10,000,000",
-    size: "54s0 Sqm",
+    size: "540 Sqm",
     type: "Land",
     currency: "₦",
   },
@@ -62,7 +62,7 @@ const PropertyDetail = [
   {
     id: "7",
     Image: "PropertyImages/ekocity.jpeg",
-    heading: "EKO CITY, ILE-AJE",
+    heading: "Eko City, Ile-Aje",
     span: "Lekki-Epe",
     amount: "100,000,000",
     size: "500 Sqm",
