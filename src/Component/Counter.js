@@ -105,7 +105,7 @@ const Counter = ({ className, ...rest }) => {
             {/*col 4*/}
             <div className="counter-column">
               <strong>
-                <CountUp {...rest} start={viewPortEntered ? null : 0} end={86}>
+                <CountUp {...rest} start={viewPortEntered ? null : 0} end={58}>
                   {({ countUpRef }) => {
                     return (
                       <VisibilitySensor
