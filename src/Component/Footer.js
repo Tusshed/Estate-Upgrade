@@ -72,11 +72,6 @@ const Footer = () => {
                     </li>
 
                     <li>
-                      <a href="https://adronhomesproperties.com/about-us/">
-                        About us
-                      </a>
-                    </li>
-                    <li>
                       <a href="#services">Our Services</a>
                     </li>
                     <li>

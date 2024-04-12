@@ -15,8 +15,8 @@ export const Home = () => {
             or invest, we will kick you off to a great and lasting experience.
           </p>
           <div className="link">
-            <a href="#" className="explore">
-              Explore
+            <a href="email.html" className="explore">
+              Enquiries
             </a>
             <a href="team.html" className="contact">
               Contact Agent
