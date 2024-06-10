@@ -77,6 +77,9 @@ const Footer = () => {
                     <li>
                       <a href="team.html">Expert Team</a>
                     </li>
+                        <li>
+                      <a href="#">Ads & Commercials</a>
+                    </li>
                     <li>
                       <a href="email.html">Contact us</a>
                     </li>
@@ -84,6 +87,7 @@ const Footer = () => {
                       <a href="https://adronhomesproperties.com/blog/">
                         Latest News
                       </a>
+                        
                     </li>
                   </ul>
                 </div>
